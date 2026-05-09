@@ -1,0 +1,12 @@
+{
+	"name": "飒爽英姿行动派",
+	"short_name": "起始页",
+	"icons": [{
+		"src": "static/icon.png",
+		"type": "image/png",
+		"sizes": "192x192"
+	}],
+	"start_url": "/?u=me",
+	"display": "standalone",
+	"theme_color": "#158e23"
+}
