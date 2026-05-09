@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-hans" class="font-auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飒爽英姿行动派</title>
+    <link rel="icon" href="static/icon.png" sizes="192x192" />
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/Dreamer-Paul/Kico-Style@master/kico.css" />
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1809713_7obvxtx02f.css" />
+    <link href="https://fastly.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="static/main.css" />
+    <script src="https://fastly.jsdelivr.net/gh/Dreamer-Paul/Kico-Style/kico.js" defer></script>
+    <script src="static/main.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="action-btn edit" ks-tag="bottom" ks-text="管理导航项">
+        <i class="fa fa-edit"></i>
+    </div>
+    <div class="action-btn updated" ks-tag="bottom" ks-text="更新日志">
+        <i class="fa fa-bullhorn"></i>
+    </div>
+    <div class="action-btn about" ks-tag="bottom" ks-text="关于">
+        <i class="fa fa-info-circle"></i>
+    </div>
+    <div class="action-btn setting" ks-tag="bottom" ks-text="设置">
+        <i class="fa fa-cog"></i>
+    </div>
+</header>
+<main>
+    <section class="navi-search">
+        <form class="input-box">
+            <div class="search-select" title="切换搜索引擎">
+                <div class="iconfont icon-baidu"></div>
+            </div>
+            <div class="search-selector"></div>
+            <input type="text" placeholder="搜索..."/>
+            <button class="btn transparent" title="搜索"><i class="fa fa-search"></i></button>
+        </form>
+    </section>
+    <section class="navi-items"></section>
+    <section class="navi-background"></section>
+</main>
+<footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> <a href="https://github.com/Maper0618" target="_blank">飒爽英姿行动派</a> | 基于 <a href="https://github.com/yubius/Bius-Start" target="_blank">Bius-Start</a> | <a href="mailto:210009531@qq.com">联系我</a></p>
+</footer>
+<window>
+    <section class="the-window updated">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button data-type="close">-</button>
+            <h3>更新日志</h3>
+        </div>
+        <div class="window-body">
+            <article>
+                <blockquote>飒爽英姿行动派 — 我的专属起始页</blockquote>
+                <h3>本次更新：</h3>
+                <ul>
+                    <li>纯静态部署，托管于 GitHub Pages</li>
+                    <li>多设备同步：访问 <code>?u=me</code> 自动加载云端配置</li>
+                    <li>整合个人浏览器书签，常用站点一键直达</li>
+                    <li>本地壁纸 9 张 + 必应/Unsplash 远程壁纸</li>
+                </ul>
+
+                <details>
+                    <summary>未来计划：</summary>
+                    <ul>
+                        <li>持续整理常用站点</li>
+                        <li>替换为自定义图标</li>
+                    </ul>
+                </details>
+            </article>
+        </div>
+    </section>
+    <section class="the-window about">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button data-type="close">-</button>
+            <h3>关于</h3>
+        </div>
+        <div class="window-body">
+            <article>
+                <h2>飒爽英姿行动派</h2>
+                <h3>简洁 · 便捷 · 时尚</h3>
+                <p>这是一个个人定制起始页，集成了我常用的网站、搜索引擎和壁纸切换。</p>
+
+                <h3>联系方式：</h3>
+                <a href="mailto:210009531@qq.com" target="_blank">电子邮件：210009531@qq.com</a>
+                <h4> </h4>
+                <a href="https://github.com/Maper0618" target="_blank">GitHub：Maper0618</a>
+
+                <h3>致谢：</h3>
+                <p>本项目基于 <a href="https://github.com/yubius/Bius-Start" target="_blank">Bius-Start (布斯起始页)</a> 改造而来，由 <a href="https://space.bilibili.com/18853927" target="_blank">是鱼布斯啊</a>、<a href="https://simsoft.top/" target="_blank">SimSoft</a>、<a href="https://paul.ren/" target="_blank">奇趣保罗</a> 等作者贡献开源代码。</p>
+
+                <h3>使用说明：</h3>
+                <ul>
+                    <li>访问 <code>?u=me</code> 加载云端配置（多设备同步）</li>
+                    <li>点击右上角齿轮可切换搜索引擎和壁纸</li>
+                    <li>点击编辑图标可管理导航项</li>
+                </ul>
+        </div>
+    </section>
+    <section class="the-window setting">
+        <div class="window-head">
+            <img src="static/icon.png" style="height:30px;float:left">
+            <button data-type="close">-</button>
+            <h3>设定</h3>
+        </div>
+        <div class="window-body">
+            <fieldset>
+                <label>
+                    <span>默认搜索引擎：</span>
+                    <select name="search" data-key="search_method"></select>
+                </label>
+                <label>
+                    <span>自定义背景：</span>
+                    <select name="background" data-key="background_type"></select>
+                </label>
+                <label>
+                    <span>减淡动画和视觉效果：</span>
+                    <select name="low_animate" data-key="motion_reduced_enum"></select>
+                </label>
+                <label>
+                    <span>自动聚焦到搜索框：</span>
+                    <input name="auto_focus" type="checkbox" class="switch" />
+                </label>
+                
+                <p class="btn-group">
+                    <button class="btn small primary" id="set-reset" title="重置个人设置为默认值">重置为默认</button>
+                    <button class="btn small transparent" id="set-input" title="导入个人设置">导入</button>
+                    <button class="btn small transparent" id="set-output" title="导出个人设置">导出</button>
+                    <input type="file" id="set-file" hidden />
+                </p>
+            </fieldset>
+        </div>
+    </section>
+    <section class="the-drawer sites">
+        <div class="drawer-head">
+            <button data-type="close">-</button>
+            <h3>管理导航项</h3>
+        </div>
+        <div class="drawer-body">
+            <div class="sites"></div>
+            <p class="add-sites">想要添加自己的导航项？请编辑配置仓库 <a href="https://github.com/Maper0618/my-start-config" target="_blank">my-start-config/me.json</a> 中的 <code>custom</code> 字段。</p>
+        </div>
+    </section>
+</window>
+</body>
+</html>
